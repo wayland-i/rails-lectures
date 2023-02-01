@@ -1,0 +1,62 @@
+  [1m[35m (153.2ms)[0m  [1m[35mCREATE DATABASE "flatiron_theater2_development" ENCODING = 'unicode'[0m
+  [1m[35m (52.5ms)[0m  [1m[35mCREATE DATABASE "flatiron_theater2_test" ENCODING = 'unicode'[0m
+  [1m[35m (24.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "flatiron_theater2_development"[0m
+  [1m[35m (37.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "flatiron_theater2_test"[0m
+  [1m[35m (169.2ms)[0m  [1m[35mCREATE DATABASE "flatiron_theater2_development" ENCODING = 'unicode'[0m
+  [1m[35m (48.3ms)[0m  [1m[35mCREATE DATABASE "flatiron_theater2_test" ENCODING = 'unicode'[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6660286684105729920)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProductions (20230201205300)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "productions" ("id" bigserial primary key, "title" character varying, "genre" character varying, "description" text, "budget" float, "image" character varying, "director" character varying, "ongoing" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230201205300"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-02-01 20:54:07.609915"], ["updated_at", "2023-02-01 20:54:07.609915"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6660286684105729920)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduction Create (0.4ms)[0m  [1m[32mINSERT INTO "productions" ("title", "genre", "description", "budget", "image", "director", "ongoing", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Hamlet"], ["genre", "Drama"], ["description", "The Tragedy of Hamlet, Prince of Denmark"], ["budget", 100000.0], ["image", "https://upload.wikimedia.org/wikipedia/commons/6/6a/Edwin_Booth_Hamlet_1870.jpg"], ["director", "Bill Shakespeare"], ["ongoing", true], ["created_at", "2023-02-01 20:54:44.143548"], ["updated_at", "2023-02-01 20:54:44.143548"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduction Create (0.1ms)[0m  [1m[32mINSERT INTO "productions" ("title", "genre", "description", "budget", "image", "director", "ongoing", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Cats"], ["genre", "Musical"], ["description", " Jellicles cats sing and dance"], ["budget", 200000.0], ["image", "https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg"], ["director", "Andrew Lloyd Webber"], ["ongoing", true], ["created_at", "2023-02-01 20:54:44.149013"], ["updated_at", "2023-02-01 20:54:44.149013"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduction Create (0.1ms)[0m  [1m[32mINSERT INTO "productions" ("title", "genre", "description", "budget", "image", "director", "ongoing", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Carmen"], ["genre", "Opera"], ["description", "Set in southern Spain this is the story of the downfall of Don José, a naïve soldier who is seduced by the wiles of the fiery and beautiful Carmen."], ["budget", 200000.0], ["image", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Prudent-Louis_Leray_-_Poster_for_the_premi%C3%A8re_of_Georges_Bizet%27s_Carmen.jpg/300px-Prudent-Louis_Leray_-_Poster_for_the_premi%C3%A8re_of_Georges_Bizet%27s_Carmen.jpg"], ["director", "Georges Bizet"], ["ongoing", false], ["created_at", "2023-02-01 20:54:44.151998"], ["updated_at", "2023-02-01 20:54:44.151998"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduction Create (0.1ms)[0m  [1m[32mINSERT INTO "productions" ("title", "genre", "description", "budget", "image", "director", "ongoing", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Hamilton"], ["genre", "Musical"], ["description", "An American Musical is a sung-and-rapped-through musical by Lin-Manuel Miranda. It tells the story of American Founding Father Alexander Hamilton."], ["budget", 400000.0], ["image", "https://upload.wikimedia.org/wikipedia/en/thumb/8/83/Hamilton-poster.jpg/220px-Hamilton-poster.jpg"], ["director", "Lin-Manuel Miranda"], ["ongoing", false], ["created_at", "2023-02-01 20:54:44.155344"], ["updated_at", "2023-02-01 20:54:44.155344"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mProduction Load (0.3ms)[0m  [1m[34mSELECT "productions".* FROM "productions"[0m
+Started GET "/" for 127.0.0.1 at 2023-02-01 15:59:24 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ianiversen/.rvm/gems/ruby-2.7.4/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ianiversen/.rvm/gems/ruby-2.7.4/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.8ms | Allocations: 773)
+Completed 200 OK in 23ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 6652)
+
+
+Started GET "/productions" for 127.0.0.1 at 2023-02-01 15:59:29 -0500
+Processing by ProductionsController#index as HTML
+  [1m[36mProduction Load (0.3ms)[0m  [1m[34mSELECT "productions".* FROM "productions"[0m
+  ↳ app/controllers/productions_controller.rb:8:in `index'
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 2.3ms | Allocations: 20082)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-02-01 15:59:30 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/productions/4" for 127.0.0.1 at 2023-02-01 15:59:39 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:44:in `set_production'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 1344)
+
+
