@@ -60,3 +60,957 @@ Processing by ProductionsController#show as HTML
 Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 1344)
 
 
+Started GET "/productions/4" for 127.0.0.1 at 2023-02-01 16:23:07 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduction Load (0.3ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:44:in `set_production'
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 5.4ms | Allocations: 3707)
+
+
+Started GET "/productions/4" for 127.0.0.1 at 2023-02-01 18:14:39 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:45:in `set_production'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 5.2ms | Allocations: 8046)
+
+
+  
+NameError (undefined local variable or method `byebug' for #<ProductionsController:0x0000000000c878>):
+  
+app/controllers/productions_controller.rb:13:in `show'
+Started GET "/productions/4" for 127.0.0.1 at 2023-02-01 18:20:13 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:45:in `set_production'
+Completed 200 OK in 16538ms (Views: 0.5ms | ActiveRecord: 2.3ms | Allocations: 139897)
+
+
+Started GET "/productions/3" for 127.0.0.1 at 2023-02-01 18:54:14 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:45:in `set_production'
+Completed 200 OK in 6585ms (Views: 0.4ms | ActiveRecord: 3.5ms | Allocations: 5368)
+
+
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 18:54:26 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:45:in `set_production'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms | Allocations: 540)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Production with 'id'=5):
+  
+app/controllers/productions_controller.rb:45:in `set_production'
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 18:55:00 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:45:in `set_production'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms | Allocations: 534)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Production with 'id'=5):
+  
+app/controllers/productions_controller.rb:45:in `set_production'
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 18:55:01 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:45:in `set_production'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 518)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Production with 'id'=5):
+  
+app/controllers/productions_controller.rb:45:in `set_production'
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 18:55:55 -0500
+  
+SyntaxError (/Users/ianiversen/Development/code/rails-lectures/flatiron_theater2/app/controllers/productions_controller.rb:57: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/productions_controller.rb:57: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/productions_controller.rb:57: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 18:56:10 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:52:in `set_production'
+Completed 404 Not Found in 6ms (ActiveRecord: 3.4ms | Allocations: 1773)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Production with 'id'=5):
+  
+app/controllers/productions_controller.rb:52:in `set_production'
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 18:56:33 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:52:in `set_production'
+Completed 404 Not Found in 5ms (ActiveRecord: 1.8ms | Allocations: 1634)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Production with 'id'=5):
+  
+app/controllers/productions_controller.rb:52:in `set_production'
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 18:56:34 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:52:in `set_production'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 524)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Production with 'id'=5):
+  
+app/controllers/productions_controller.rb:52:in `set_production'
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 18:57:28 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduction Load (1.6ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE (5) LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:52:in `set_production'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.6ms | Allocations: 1019)
+
+
+  
+ActiveRecord::StatementInvalid (PG::DatatypeMismatch: ERROR:  argument of WHERE must be type boolean, not type integer
+LINE 1: SELECT "productions".* FROM "productions" WHERE (5) LIMIT $1
+                                                         ^
+):
+  
+app/controllers/productions_controller.rb:52:in `set_production'
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 18:57:29 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduction Load (0.3ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE (5) LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:52:in `set_production'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms | Allocations: 632)
+
+
+  
+ActiveRecord::StatementInvalid (PG::DatatypeMismatch: ERROR:  argument of WHERE must be type boolean, not type integer
+LINE 1: SELECT "productions".* FROM "productions" WHERE (5) LIMIT $1
+                                                         ^
+):
+  
+app/controllers/productions_controller.rb:52:in `set_production'
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 18:57:38 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:52:in `set_production'
+Completed 404 Not Found in 4ms (ActiveRecord: 1.7ms | Allocations: 1635)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Production with 'id'=5):
+  
+app/controllers/productions_controller.rb:52:in `set_production'
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 18:57:57 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:52:in `set_production'
+Completed 404 Not Found in 4ms (ActiveRecord: 1.5ms | Allocations: 1628)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Production with 'id'=5):
+  
+app/controllers/productions_controller.rb:52:in `set_production'
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 18:57:57 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:52:in `set_production'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 518)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Production with 'id'=5):
+  
+app/controllers/productions_controller.rb:52:in `set_production'
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 18:58:31 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:53:in `set_production'
+Completed 404 Not Found in 5ms (ActiveRecord: 2.1ms | Allocations: 1631)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Production with 'id'=5):
+  
+app/controllers/productions_controller.rb:53:in `set_production'
+Started GET "/productions/4" for 127.0.0.1 at 2023-02-01 18:59:31 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:53:in `set_production'
+  [1m[36mCACHE Production Load (0.0ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 1.6ms | Allocations: 4201)
+
+
+Started GET "/productions/6" for 127.0.0.1 at 2023-02-01 18:59:34 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:53:in `set_production'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 519)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Production with 'id'=6):
+  
+app/controllers/productions_controller.rb:53:in `set_production'
+Started GET "/productions/6" for 127.0.0.1 at 2023-02-01 18:59:54 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.6ms | Allocations: 1565)
+
+
+Started GET "/productions/6" for 127.0.0.1 at 2023-02-01 19:00:47 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 404 Not Found in 4ms (ActiveRecord: 1.6ms | Allocations: 1703)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Production with 'id'={:id=>"6"}):
+  
+app/controllers/productions_controller.rb:15:in `show'
+Started GET "/productions/1" for 127.0.0.1 at 2023-02-01 19:26:03 -0500
+Processing by ProductionsController#show as */*
+  Parameters: {"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true, "id"=>"1", "production"=>{"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}}
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 3.4ms | Allocations: 2864)
+
+
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 19:26:07 -0500
+Processing by ProductionsController#show as */*
+  Parameters: {"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true, "id"=>"5", "production"=>{"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}}
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 535)
+
+
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 19:34:54 -0500
+Processing by ProductionsController#show as */*
+  Parameters: {"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true, "id"=>"5", "production"=>{"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}}
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 3.5ms | Allocations: 3512)
+
+
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 20:54:40 -0500
+Processing by ProductionsController#show as */*
+  Parameters: {"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true, "id"=>"5", "production"=>{"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}}
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 204 No Content in 1ms (ActiveRecord: 6.7ms | Allocations: 803)
+
+
+Started GET "/productions/3" for 127.0.0.1 at 2023-02-01 20:55:03 -0500
+Processing by ProductionsController#show as */*
+  Parameters: {"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true, "id"=>"3", "production"=>{"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 625)
+
+
+Started GET "/productions/4" for 127.0.0.1 at 2023-02-01 20:55:06 -0500
+Processing by ProductionsController#show as */*
+  Parameters: {"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true, "id"=>"4", "production"=>{"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 623)
+
+
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 20:55:09 -0500
+Processing by ProductionsController#show as */*
+  Parameters: {"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true, "id"=>"5", "production"=>{"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 624)
+
+
+Started GET "/productions/6" for 127.0.0.1 at 2023-02-01 20:55:21 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 204 No Content in 2ms (ActiveRecord: 0.1ms | Allocations: 621)
+
+
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 20:55:49 -0500
+Processing by ProductionsController#show as */*
+  Parameters: {"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true, "id"=>"5", "production"=>{"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 404 Not Found in 3ms (ActiveRecord: 5.3ms | Allocations: 752)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Production with 'id'={:id=>"5"}):
+  
+app/controllers/productions_controller.rb:15:in `show'
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 20:56:29 -0500
+Processing by ProductionsController#show as */*
+  Parameters: {"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true, "id"=>"5", "production"=>{"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 204 No Content in 23ms (ActiveRecord: 2.5ms | Allocations: 687)
+
+
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 20:56:53 -0500
+Processing by ProductionsController#show as */*
+  Parameters: {"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true, "id"=>"5", "production"=>{"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 204 No Content in 2ms (ActiveRecord: 1.8ms | Allocations: 689)
+
+
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 20:56:54 -0500
+Processing by ProductionsController#show as */*
+  Parameters: {"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true, "id"=>"5", "production"=>{"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 624)
+
+
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 20:57:06 -0500
+Processing by ProductionsController#show as */*
+  Parameters: {"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true, "id"=>"5", "production"=>{"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 1.8ms | Allocations: 751)
+
+
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 20:58:25 -0500
+Processing by ProductionsController#show as */*
+  Parameters: {"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true, "id"=>"5", "production"=>{"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 1.8ms | Allocations: 2438)
+
+
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 20:58:51 -0500
+Processing by ProductionsController#show as */*
+  Parameters: {"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true, "id"=>"5", "production"=>{"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}}
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 200 OK in 47292ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 3623)
+
+
+Started GET "/productions/5" for 127.0.0.1 at 2023-02-01 20:59:49 -0500
+Processing by ProductionsController#show as */*
+  Parameters: {"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true, "id"=>"5", "production"=>{"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 2.1ms | Allocations: 737)
+
+
+Started GET "/productions/3" for 127.0.0.1 at 2023-02-01 21:02:06 -0500
+Processing by ProductionsController#show as */*
+  Parameters: {"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true, "id"=>"3", "production"=>{"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 204 No Content in 23ms (ActiveRecord: 2.4ms | Allocations: 2585)
+
+
+Started GET "/productions/4" for 127.0.0.1 at 2023-02-01 21:02:16 -0500
+Processing by ProductionsController#show as */*
+  Parameters: {"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true, "id"=>"4", "production"=>{"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}}
+  [1m[36mProduction Load (0.3ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 204 No Content in 2ms (ActiveRecord: 0.3ms | Allocations: 480)
+
+
+Started GET "/productions/4" for 127.0.0.1 at 2023-02-01 21:02:20 -0500
+Processing by ProductionsController#show as */*
+  Parameters: {"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true, "id"=>"4", "production"=>{"genre"=>"Musical", "description"=>" Jellicles cats sing and dance", "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}}
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 204 No Content in 1ms (ActiveRecord: 0.2ms | Allocations: 480)
+
+
+Started GET "/productions4" for 127.0.0.1 at 2023-02-01 21:02:28 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/productions4"):
+  
+Started GET "/productions4" for 127.0.0.1 at 2023-02-01 21:02:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/productions4"):
+  
+Started GET "/productions4" for 127.0.0.1 at 2023-02-01 21:02:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/productions4"):
+  
+Started GET "/productions/4" for 127.0.0.1 at 2023-02-01 21:02:43 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 200 OK in 23ms (Views: 0.1ms | ActiveRecord: 1.7ms | Allocations: 1673)
+
+
+Started GET "/productions/4" for 127.0.0.1 at 2023-02-01 21:02:52 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 204 No Content in 24ms (ActiveRecord: 2.1ms | Allocations: 3487)
+
+
+Started GET "/productions/4" for 127.0.0.1 at 2023-02-01 21:02:53 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 478)
+
+
+Started GET "/productions/4" for 127.0.0.1 at 2023-02-01 21:02:55 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 478)
+
+
+Started GET "/productions/4" for 127.0.0.1 at 2023-02-01 21:03:04 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 478)
+
+
+Started GET "/productions/4" for 127.0.0.1 at 2023-02-01 21:03:13 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduction Load (0.3ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 204 No Content in 1ms (ActiveRecord: 0.3ms | Allocations: 478)
+
+
+Started GET "/" for ::1 at 2023-02-01 21:03:19 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ianiversen/.rvm/gems/ruby-2.7.4/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ianiversen/.rvm/gems/ruby-2.7.4/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | Allocations: 459)
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 3485)
+
+
+Started GET "/productions" for ::1 at 2023-02-01 21:03:24 -0500
+Processing by ProductionsController#index as HTML
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions"[0m
+  ↳ app/controllers/productions_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1181)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-02-01 21:03:24 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/productions/4" for ::1 at 2023-02-01 21:03:28 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 204 No Content in 23ms (ActiveRecord: 0.2ms | Allocations: 477)
+
+
+Started GET "/productions" for ::1 at 2023-02-01 21:03:37 -0500
+Processing by ProductionsController#index as HTML
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions"[0m
+  ↳ app/controllers/productions_controller.rb:8:in `index'
+Completed 200 OK in 30ms (Views: 24.3ms | ActiveRecord: 2.3ms | Allocations: 4111)
+
+
+Started GET "/productions/4" for ::1 at 2023-02-01 21:03:46 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:15:in `show'
+Completed 200 OK in 22ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 664)
+
+
+Started GET "/productions/4" for ::1 at 2023-02-01 21:04:40 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:18:in `show'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 2.0ms | Allocations: 1681)
+
+
+Started GET "/productions/4" for ::1 at 2023-02-01 21:04:51 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:18:in `show'
+Completed 204 No Content in 26ms (ActiveRecord: 2.1ms | Allocations: 3486)
+
+
+Started GET "/productions/4" for ::1 at 2023-02-01 21:04:52 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:18:in `show'
+Completed 204 No Content in 1ms (ActiveRecord: 0.2ms | Allocations: 478)
+
+
+Started GET "/productions/4" for ::1 at 2023-02-02 11:23:24 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/ianiversen/Development/code/rails-lectures/flatiron_theater2/app/controllers/productions_controller.rb:75: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/productions_controller.rb:75: syntax error, unexpected `end', expecting end-of-input
+app/controllers/productions_controller.rb:75: syntax error, unexpected `end', expecting end-of-input
+Started GET "/productions/4" for ::1 at 2023-02-02 11:24:26 -0500
+  
+SyntaxError (/Users/ianiversen/Development/code/rails-lectures/flatiron_theater2/app/controllers/productions_controller.rb:75: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/productions_controller.rb:75: syntax error, unexpected `end', expecting end-of-input
+app/controllers/productions_controller.rb:75: syntax error, unexpected `end', expecting end-of-input
+Started GET "/productions/4" for ::1 at 2023-02-02 11:24:27 -0500
+  
+SyntaxError (/Users/ianiversen/Development/code/rails-lectures/flatiron_theater2/app/controllers/productions_controller.rb:75: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/productions_controller.rb:75: syntax error, unexpected `end', expecting end-of-input
+app/controllers/productions_controller.rb:75: syntax error, unexpected `end', expecting end-of-input
+Started GET "/productions/3" for ::1 at 2023-02-02 11:24:30 -0500
+  
+SyntaxError (/Users/ianiversen/Development/code/rails-lectures/flatiron_theater2/app/controllers/productions_controller.rb:75: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/productions_controller.rb:75: syntax error, unexpected `end', expecting end-of-input
+app/controllers/productions_controller.rb:75: syntax error, unexpected `end', expecting end-of-input
+Started GET "/productions/3" for ::1 at 2023-02-02 11:24:53 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:18:in `show'
+  [1m[36mCACHE Production Load (0.0ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:19:in `show'
+Completed 204 No Content in 16ms (ActiveRecord: 4.7ms | Allocations: 20442)
+
+
+Started GET "/productions/3" for ::1 at 2023-02-02 11:24:54 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:18:in `show'
+  [1m[36mCACHE Production Load (0.0ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:19:in `show'
+Completed 204 No Content in 1ms (ActiveRecord: 0.2ms | Allocations: 863)
+
+
+Started GET "/productions/3" for ::1 at 2023-02-02 11:25:00 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:18:in `show'
+  [1m[36mCACHE Production Load (0.0ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:19:in `show'
+Completed 204 No Content in 1ms (ActiveRecord: 0.2ms | Allocations: 863)
+
+
+Started GET "/productions/3" for ::1 at 2023-02-02 11:25:01 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:18:in `show'
+  [1m[36mCACHE Production Load (0.0ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:19:in `show'
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 850)
+
+
+Started GET "/productions/3" for ::1 at 2023-02-02 11:25:01 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:18:in `show'
+  [1m[36mCACHE Production Load (0.0ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:19:in `show'
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 869)
+
+
+Started GET "/productions/3" for ::1 at 2023-02-02 11:25:01 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:18:in `show'
+  [1m[36mCACHE Production Load (0.0ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:19:in `show'
+Completed 204 No Content in 1ms (ActiveRecord: 0.2ms | Allocations: 850)
+
+
+Started GET "/" for ::1 at 2023-02-02 11:25:13 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ianiversen/.rvm/gems/ruby-2.7.4/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ianiversen/.rvm/gems/ruby-2.7.4/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.2ms | Allocations: 459)
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 3489)
+
+
+Started GET "/productions" for ::1 at 2023-02-02 11:25:17 -0500
+Processing by ProductionsController#index as HTML
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions"[0m
+  ↳ app/controllers/productions_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1231)
+
+
+Started GET "/productions/1" for ::1 at 2023-02-02 11:25:22 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:18:in `show'
+  [1m[36mCACHE Production Load (0.0ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:19:in `show'
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 850)
+
+
+Started GET "/productions/1" for ::1 at 2023-02-02 11:25:29 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduction Load (0.3ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:18:in `show'
+  [1m[36mCACHE Production Load (0.0ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:19:in `show'
+Completed 204 No Content in 2ms (ActiveRecord: 0.3ms | Allocations: 850)
+
+
+Started GET "/productions/2" for ::1 at 2023-02-02 11:25:33 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:18:in `show'
+  [1m[36mCACHE Production Load (0.0ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:19:in `show'
+Completed 204 No Content in 1ms (ActiveRecord: 0.1ms | Allocations: 850)
+
+
+Started GET "/productions/1" for ::1 at 2023-02-02 11:25:45 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:18:in `show'
+  [1m[36mCACHE Production Load (0.0ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:19:in `show'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.9ms | Allocations: 4159)
+
+
+Started GET "/productions/1" for ::1 at 2023-02-02 11:25:55 -0500
+  
+SyntaxError (/Users/ianiversen/Development/code/rails-lectures/flatiron_theater2/app/controllers/productions_controller.rb:75: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/productions_controller.rb:75: syntax error, unexpected `end', expecting end-of-input
+app/controllers/productions_controller.rb:75: syntax error, unexpected `end', expecting end-of-input
+Started GET "/productions/1" for ::1 at 2023-02-02 11:27:27 -0500
+  
+SyntaxError (/Users/ianiversen/Development/code/rails-lectures/flatiron_theater2/app/controllers/productions_controller.rb:77: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/productions_controller.rb:77: syntax error, unexpected `end', expecting end-of-input
+app/controllers/productions_controller.rb:77: syntax error, unexpected `end', expecting end-of-input
+Started GET "/productions/1" for ::1 at 2023-02-02 11:27:28 -0500
+  
+SyntaxError (/Users/ianiversen/Development/code/rails-lectures/flatiron_theater2/app/controllers/productions_controller.rb:77: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/productions_controller.rb:77: syntax error, unexpected `end', expecting end-of-input
+app/controllers/productions_controller.rb:77: syntax error, unexpected `end', expecting end-of-input
+Started GET "/productions/1" for ::1 at 2023-02-02 11:28:06 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:18:in `show'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.7ms | Allocations: 3673)
+
+
+Started GET "/productions/2" for ::1 at 2023-02-02 11:28:09 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:18:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 643)
+
+
+Started GET "/productions/2" for ::1 at 2023-02-02 11:28:32 -0500
+  
+SyntaxError (/Users/ianiversen/Development/code/rails-lectures/flatiron_theater2/app/controllers/productions_controller.rb:77: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/productions_controller.rb:77: syntax error, unexpected `end', expecting end-of-input
+app/controllers/productions_controller.rb:77: syntax error, unexpected `end', expecting end-of-input
+Started GET "/productions/2" for ::1 at 2023-02-02 11:28:58 -0500
+  
+SyntaxError (/Users/ianiversen/Development/code/rails-lectures/flatiron_theater2/app/controllers/productions_controller.rb:77: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/productions_controller.rb:77: syntax error, unexpected `end', expecting end-of-input
+app/controllers/productions_controller.rb:77: syntax error, unexpected `end', expecting end-of-input
+Started GET "/productions/2" for ::1 at 2023-02-02 11:28:59 -0500
+  
+SyntaxError (/Users/ianiversen/Development/code/rails-lectures/flatiron_theater2/app/controllers/productions_controller.rb:77: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/productions_controller.rb:77: syntax error, unexpected `end', expecting end-of-input
+app/controllers/productions_controller.rb:77: syntax error, unexpected `end', expecting end-of-input
+Started GET "/productions/2" for ::1 at 2023-02-02 11:29:08 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:18:in `show'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.7ms | Allocations: 4013)
+
+
+Started GET "/productions/2" for ::1 at 2023-02-02 11:29:14 -0500
+  
+SyntaxError (/Users/ianiversen/Development/code/rails-lectures/flatiron_theater2/app/controllers/productions_controller.rb:77: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/productions_controller.rb:77: syntax error, unexpected `end', expecting end-of-input
+app/controllers/productions_controller.rb:77: syntax error, unexpected `end', expecting end-of-input
+Started GET "/productions/2" for ::1 at 2023-02-02 11:29:30 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:18:in `show'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 2.2ms | Allocations: 3688)
+
+
+Started GET "/productions/100" for ::1 at 2023-02-02 11:30:43 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 100], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:18:in `show'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 2.0ms | Allocations: 1635)
+
+
+Started GET "/productions/100" for ::1 at 2023-02-02 11:30:59 -0500
+Processing by ProductionsController#show as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 100], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:18:in `show'
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 1.5ms | Allocations: 1635)
+
+
+  [1m[36mProduction Load (0.3ms)[0m  [1m[34mSELECT "productions".* FROM "productions"[0m
+Started POST "/productions/" for 127.0.0.1 at 2023-02-02 12:44:18 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductionsController#create as */*
+  Parameters: {"genre"=>"Musical", "director"=>"Andrew Lloyd Webber", "description"=>" The Phantom of the Opera is a musical by A.L.W.", "budget"=>400000.0, "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true, "production"=>{"genre"=>"Musical", "description"=>" The Phantom of the Opera is a musical by A.L.W.", "budget"=>400000.0, "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "director"=>"Andrew Lloyd Webber", "ongoing"=>true}}
+Completed 204 No Content in 499003ms (ActiveRecord: 1.0ms | Allocations: 108549)
+
+
+  [1m[36mProduction Load (0.4ms)[0m  [1m[34mSELECT "productions".* FROM "productions"[0m
+Started POST "/productions/" for 127.0.0.1 at 2023-02-02 12:54:36 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductionsController#create as */*
+  Parameters: {"genre"=>"Musical", "director"=>"Andrew Lloyd Webber", "description"=>" The Phantom of the Opera is a musical by A.L.W.", "budget"=>400000.0, "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true, "production"=>{"genre"=>"Musical", "description"=>" The Phantom of the Opera is a musical by A.L.W.", "budget"=>400000.0, "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "director"=>"Andrew Lloyd Webber", "ongoing"=>true}}
+Completed 204 No Content in 14236ms (ActiveRecord: 1.0ms | Allocations: 108485)
+
+
+Started POST "/productions/" for 127.0.0.1 at 2023-02-02 12:55:05 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductionsController#create as */*
+  Parameters: {"genre"=>"Musical", "director"=>"Andrew Lloyd Webber", "description"=>" The Phantom of the Opera is a musical by A.L.W.", "budget"=>400000.0, "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true, "production"=>{"genre"=>"Musical", "description"=>" The Phantom of the Opera is a musical by A.L.W.", "budget"=>400000.0, "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "director"=>"Andrew Lloyd Webber", "ongoing"=>true}}
+Completed 204 No Content in 23253ms (ActiveRecord: 1.1ms | Allocations: 108556)
+
+
+Started POST "/productions/" for 127.0.0.1 at 2023-02-02 12:55:36 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductionsController#create as */*
+  Parameters: {"genre"=>"Musical", "director"=>"Andrew Lloyd Webber", "description"=>" The Phantom of the Opera is a musical by A.L.W.", "budget"=>400000.0, "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}
+Completed 204 No Content in 185775ms (ActiveRecord: 0.0ms | Allocations: 108603)
+
+
+Started POST "/productions/" for 127.0.0.1 at 2023-02-02 13:00:43 -0500
+Processing by ProductionsController#create as */*
+  Parameters: {"genre"=>"Musical", "director"=>"Andrew Lloyd Webber", "description"=>" The Phantom of the Opera is a musical by A.L.W.", "budget"=>400000.0, "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}
+Completed 500 Internal Server Error in 1874ms (ActiveRecord: 2.2ms | Allocations: 20762)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/productions_controller.rb:55:in `create'
+Started POST "/productions/" for 127.0.0.1 at 2023-02-02 13:01:26 -0500
+Processing by ProductionsController#create as */*
+  Parameters: {"genre"=>"Musical", "director"=>"Andrew Lloyd Webber", "description"=>" The Phantom of the Opera is a musical by A.L.W.", "budget"=>400000.0, "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}
+Completed 400 Bad Request in 2384ms (ActiveRecord: 0.0ms | Allocations: 2396)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: production):
+  
+app/controllers/productions_controller.rb:81:in `production_params'
+app/controllers/productions_controller.rb:55:in `create'
+Started POST "/productions/" for 127.0.0.1 at 2023-02-02 13:01:48 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductionsController#create as */*
+  Parameters: {"genre"=>"Musical", "director"=>"Andrew Lloyd Webber", "description"=>" The Phantom of the Opera is a musical by A.L.W.", "budget"=>400000.0, "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}
+Completed 400 Bad Request in 2579ms (ActiveRecord: 0.0ms | Allocations: 108850)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: production):
+  
+app/controllers/productions_controller.rb:81:in `production_params'
+app/controllers/productions_controller.rb:55:in `create'
+Started POST "/productions/" for 127.0.0.1 at 2023-02-02 13:03:33 -0500
+Processing by ProductionsController#create as */*
+  Parameters: {"title"=>"The Phantom of the Opera", "genre"=>"Musical", "director"=>"Andrew Lloyd Webber", "description"=>" The Phantom of the Opera is a musical by A.L.W.", "budget"=>400000.0, "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}
+Completed 400 Bad Request in 3286ms (ActiveRecord: 0.0ms | Allocations: 2110)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: production):
+  
+app/controllers/productions_controller.rb:81:in `production_params'
+app/controllers/productions_controller.rb:55:in `create'
+Started POST "/productions/" for 127.0.0.1 at 2023-02-02 13:04:14 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductionsController#create as */*
+  Parameters: {"title"=>"The Phantom of the Opera", "genre"=>"Musical", "director"=>"Andrew Lloyd Webber", "description"=>" The Phantom of the Opera is a musical by A.L.W.", "budget"=>400000.0, "image"=>"https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg", "ongoing"=>true}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/productions_controller.rb:55:in `create'
+  [1m[36mProduction Create (1.3ms)[0m  [1m[32mINSERT INTO "productions" ("title", "genre", "description", "budget", "image", "director", "ongoing", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "The Phantom of the Opera"], ["genre", "Musical"], ["description", " The Phantom of the Opera is a musical by A.L.W."], ["budget", 400000.0], ["image", "https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg"], ["director", "Andrew Lloyd Webber"], ["ongoing", true], ["created_at", "2023-02-02 18:05:37.411329"], ["updated_at", "2023-02-02 18:05:37.411329"]]
+  ↳ app/controllers/productions_controller.rb:55:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/productions_controller.rb:55:in `create'
+Completed 204 No Content in 82768ms (ActiveRecord: 3.8ms | Allocations: 130664)
+
+
+  [1m[36mProduction Load (0.3ms)[0m  [1m[34mSELECT "productions".* FROM "productions"[0m
+Started PATCH "/productions/1" for 127.0.0.1 at 2023-02-02 14:25:57 -0500
+Processing by ProductionsController#update as */*
+  Parameters: {"genre"=>"HAPPY", "id"=>"1"}
+[31mUnpermitted parameter: :id. Context: { controller: ProductionsController, action: update, request: #<ActionDispatch::Request:0x00007f96d9d97660>, params: {"genre"=>"HAPPY", "controller"=>"productions", "action"=>"update", "id"=>"1"} }[0m
+Completed 500 Internal Server Error in 1ms (Allocations: 754)
+
+
+  
+NoMethodError (undefined method `update' for nil:NilClass):
+  
+app/controllers/productions_controller.rb:61:in `update'
+Started PATCH "/productions/1" for 127.0.0.1 at 2023-02-02 14:26:40 -0500
+Processing by ProductionsController#update as */*
+  Parameters: {"genre"=>"HAPPY", "id"=>"1"}
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:76:in `set_production'
+[31mUnpermitted parameter: :id. Context: { controller: ProductionsController, action: update, request: #<ActionDispatch::Request:0x00007f96da448a18>, params: {"genre"=>"HAPPY", "controller"=>"productions", "action"=>"update", "id"=>"1"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/productions_controller.rb:61:in `update'
+  [1m[36mProduction Update (0.5ms)[0m  [1m[33mUPDATE "productions" SET "genre" = $1, "updated_at" = $2 WHERE "productions"."id" = $3[0m  [["genre", "HAPPY"], ["updated_at", "2023-02-02 19:26:40.693086"], ["id", 1]]
+  ↳ app/controllers/productions_controller.rb:61:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/productions_controller.rb:61:in `update'
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 6.4ms | Allocations: 8706)
+
+
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" ORDER BY "productions"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" ORDER BY "productions"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" ORDER BY "productions"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 2]]
+Started PATCH "/productions/100" for 127.0.0.1 at 2023-02-02 14:29:32 -0500
+Processing by ProductionsController#update as */*
+  Parameters: {"genre"=>"HAPPY", "id"=>"100"}
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 100], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:76:in `set_production'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms | Allocations: 534)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Production with 'id'=100):
+  
+app/controllers/productions_controller.rb:76:in `set_production'
+Started PATCH "/productions/100" for 127.0.0.1 at 2023-02-02 14:30:35 -0500
+Processing by ProductionsController#update as */*
+  Parameters: {"genre"=>"HAPPY", "id"=>"100"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 100], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:76:in `set_production'
+Completed 404 Not Found in 6ms (ActiveRecord: 3.3ms | Allocations: 1665)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Production with 'id'=100):
+  
+app/controllers/productions_controller.rb:76:in `set_production'
+Started PATCH "/productions/100" for 127.0.0.1 at 2023-02-02 14:31:00 -0500
+Processing by ProductionsController#update as */*
+  Parameters: {"genre"=>"HAPPY", "id"=>"100"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 100], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:76:in `set_production'
+Completed 404 Not Found in 4ms (ActiveRecord: 1.8ms | Allocations: 1628)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Production with 'id'=100):
+  
+app/controllers/productions_controller.rb:76:in `set_production'
+Started PATCH "/productions/99" for 127.0.0.1 at 2023-02-02 14:31:10 -0500
+Processing by ProductionsController#update as */*
+  Parameters: {"genre"=>"HAPPY", "id"=>"99"}
+  [1m[36mProduction Load (0.1ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:76:in `set_production'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 518)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Production with 'id'=99):
+  
+app/controllers/productions_controller.rb:76:in `set_production'
+Started PATCH "/productions/99" for 127.0.0.1 at 2023-02-02 14:35:12 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductionsController#update as */*
+  Parameters: {"genre"=>"HAPPY", "id"=>"99"}
+  [1m[36mProduction Load (0.4ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:79:in `set_production'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 2.6ms | Allocations: 2572)
+
+
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProduction Load (0.3ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Started PATCH "/productions/3" for 127.0.0.1 at 2023-02-02 14:37:30 -0500
+Processing by ProductionsController#update as */*
+  Parameters: {"genre"=>"So so so sad", "id"=>"3"}
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:79:in `set_production'
+[31mUnpermitted parameter: :id. Context: { controller: ProductionsController, action: update, request: #<ActionDispatch::Request:0x00007ff668617e28>, params: {"genre"=>"So so so sad", "controller"=>"productions", "action"=>"update", "id"=>"3"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/productions_controller.rb:64:in `update'
+  [1m[36mProduction Update (0.3ms)[0m  [1m[33mUPDATE "productions" SET "genre" = $1, "updated_at" = $2 WHERE "productions"."id" = $3[0m  [["genre", "So so so sad"], ["updated_at", "2023-02-02 19:37:30.744460"], ["id", 3]]
+  ↳ app/controllers/productions_controller.rb:64:in `update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/productions_controller.rb:64:in `update'
+Completed 200 OK in 24ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 38709)
+
+
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions"[0m
+Started DELETE "/productions/5" for 127.0.0.1 at 2023-02-02 14:39:26 -0500
+Processing by ProductionsController#destroy as */*
+  Parameters: {"genre"=>"So so so sad", "id"=>"5"}
+  [1m[36mProduction Load (0.2ms)[0m  [1m[34mSELECT "productions".* FROM "productions" WHERE "productions"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/productions_controller.rb:79:in `set_production'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/productions_controller.rb:73:in `destroy'
+  [1m[36mProduction Destroy (0.1ms)[0m  [1m[31mDELETE FROM "productions" WHERE "productions"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/productions_controller.rb:73:in `destroy'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/productions_controller.rb:73:in `destroy'
+Completed 204 No Content in 3ms (ActiveRecord: 0.9ms | Allocations: 1808)
+
+
+  [1m[36mProduction Load (0.3ms)[0m  [1m[34mSELECT "productions".* FROM "productions"[0m
+  [1m[36mProduction Load (0.4ms)[0m  [1m[34mSELECT "productions".* FROM "productions" ORDER BY "productions"."id" ASC[0m
